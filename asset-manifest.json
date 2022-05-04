@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/foodsrestaurant.github.io/static/css/main.9f3a986c.css",
-    "main.js": "/foodsrestaurant.github.io/static/js/main.c27d9562.js",
-    "static/js/787.40fecade.chunk.js": "/foodsrestaurant.github.io/static/js/787.40fecade.chunk.js",
-    "static/media/img4.png": "/foodsrestaurant.github.io/static/media/img4.480a6ba8f60ecc34707f.png",
-    "static/media/img1.png": "/foodsrestaurant.github.io/static/media/img1.b336cc46a0a22975941a.png",
-    "static/media/img2.png": "/foodsrestaurant.github.io/static/media/img2.ab704fb14d71dbab52d3.png",
-    "static/media/img3.png": "/foodsrestaurant.github.io/static/media/img3.3692a262a1391e6f4e7c.png",
-    "static/media/logo2.png": "/foodsrestaurant.github.io/static/media/logo2.46cd3d989af6b8fdea98.png",
-    "static/media/img5.png": "/foodsrestaurant.github.io/static/media/img5.0c04a6bac5f86711dcfd.png",
-    "index.html": "/foodsrestaurant.github.io/index.html",
-    "main.9f3a986c.css.map": "/foodsrestaurant.github.io/static/css/main.9f3a986c.css.map",
-    "main.c27d9562.js.map": "/foodsrestaurant.github.io/static/js/main.c27d9562.js.map",
-    "787.40fecade.chunk.js.map": "/foodsrestaurant.github.io/static/js/787.40fecade.chunk.js.map"
+    "main.css": "/foodsrestaurant/static/css/main.9f3a986c.css",
+    "main.js": "/foodsrestaurant/static/js/main.a7e80817.js",
+    "static/js/787.40fecade.chunk.js": "/foodsrestaurant/static/js/787.40fecade.chunk.js",
+    "static/media/img4.png": "/foodsrestaurant/static/media/img4.480a6ba8f60ecc34707f.png",
+    "static/media/img1.png": "/foodsrestaurant/static/media/img1.b336cc46a0a22975941a.png",
+    "static/media/img2.png": "/foodsrestaurant/static/media/img2.ab704fb14d71dbab52d3.png",
+    "static/media/img3.png": "/foodsrestaurant/static/media/img3.3692a262a1391e6f4e7c.png",
+    "static/media/logo2.png": "/foodsrestaurant/static/media/logo2.46cd3d989af6b8fdea98.png",
+    "static/media/img5.png": "/foodsrestaurant/static/media/img5.0c04a6bac5f86711dcfd.png",
+    "index.html": "/foodsrestaurant/index.html",
+    "main.9f3a986c.css.map": "/foodsrestaurant/static/css/main.9f3a986c.css.map",
+    "main.a7e80817.js.map": "/foodsrestaurant/static/js/main.a7e80817.js.map",
+    "787.40fecade.chunk.js.map": "/foodsrestaurant/static/js/787.40fecade.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9f3a986c.css",
-    "static/js/main.c27d9562.js"
+    "static/js/main.a7e80817.js"
   ]
 }
