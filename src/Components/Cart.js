@@ -13,16 +13,16 @@ export const Cart = () => {
         updateItemQuantity,
         emptyCart
     }=useCart();
-    const [auth,setauth]= useState(false);
-        useEffect(()=>{
-                 const authSession =JSON.parse(sessionStorage.getItem("authToken"));
-                 console.log(authSession);
-                     if(authSession){
+//     const [auth,setauth]= useState(false);
+//         useEffect(()=>{
+//                  const authSession =JSON.parse(sessionStorage.getItem("authToken"));
+//                  console.log(authSession);
+//                      if(authSession){
 
-                                    setauth(authSession.auth);
-  }
+//                                     setauth(authSession.auth);
+//   }
 
-},[]);
+// },[]);
     if(isEmpty) return <div className="d-flex flex-column align-items-center"> <h1 className="text-center m-4">Your Cart is Empty</h1>
               <Link to="/home"><button className="btn btn-primary m-4">Go To Menu</button></Link>  
     </div>
@@ -69,14 +69,9 @@ export const Cart = () => {
                     <button className="btn btn-danger m-2"
                     onClick={()=>emptyCart()}
                     >Clear cart</button> 
-                    {
-                        auth?<Link to="/checkout"><button className="btn btn-primary m-2"
+                  < Link to="/checkout"><button className="btn btn-primary m-2"
                         onClick={()=>emptyCart()} >Order Now</button></Link>
-                        :
-                        <Link to="/login"><button className="btn btn-primary m-2"
-                     >Order Now</button></Link>
-                    }
-                    
+                      
 
                 </div>
           </div>

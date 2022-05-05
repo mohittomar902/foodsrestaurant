@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-export const LogInPage = () => {
+export const LogInPage = (props) => {
   const [user,setuser]=useState({});
+
  
   return (
     <section className="vh-100 gradient-custom">
@@ -32,20 +33,22 @@ export const LogInPage = () => {
               </div>
 
               <p className="small mb-5 pb-lg-2"><a className="text-white-50" href="#!">Forgot password?</a></p>
-            <a href="/cart">
+            <Link to="/cart">
               <button class="btn btn-outline-light btn-lg px-5" 
               onClick={()=>{
                
                 if(user.email==="abc@gmail.com"&&user.pass==="1234"){
                   sessionStorage.setItem("authToken", JSON.stringify({auth:true}));
+                  props.setauth(true);
                  
                 }
                 else{
                   sessionStorage.setItem("authToken", JSON.stringify({auth:false}));
+                  props.setauth(false);
                 }
               }}
               type="submit">Login</button>
-              </a>
+              </Link>
               <div className="d-flex justify-content-center text-center mt-4 pt-1">
                 <a href="#!" className="text-white"><i className="fab fa-facebook-f fa-lg"></i></a>
                 <a href="#!" className="text-white"><i className="fab fa-twitter fa-lg mx-4 px-2"></i></a>

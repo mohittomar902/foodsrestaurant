@@ -8,17 +8,19 @@ import { BrowserRouter as Router,Route, Routes,Link } from 'react-router-dom';
 import { Welcome } from './Components/Welcome';
 import { LogInPage } from './Components/LogInPage';
 import { ThankyouPage } from './Components/ThankyouPage';
+import { useState } from 'react';
 function App() {
+  const [auth,setauth]=useState(false);
   
   return (
     
     <CartProvider>
-    <Header/>
+    <Header auth={auth} setauth={setauth}/>
     <Routes>
       <Route path='/' element={<Welcome/>}/>
       <Route path='home' element={<Home/>}/>
       <Route path='cart' element={<Cart/>}/>
-      <Route path='login' element={<LogInPage/>}/>
+      <Route path='login' element={<LogInPage auth={auth} setauth={setauth}/>}/>
       <Route path='checkout' element={<ThankyouPage/>}/>
     </Routes>
     </CartProvider>

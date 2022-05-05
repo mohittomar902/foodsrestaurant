@@ -5,21 +5,20 @@ import { Link } from 'react-router-dom';
 import { useEffect,useState } from 'react';
 
 
-export const Header = () => {
+export const Header = (props) => {
   const {totalItems}=useCart();
-  const [auth,setauth]= useState(false);
+  
         useEffect(()=>{
                  const authSession =JSON.parse(sessionStorage.getItem("authToken"));
-                 console.log(authSession);
                      if(authSession){
 
-                                    setauth(authSession.auth);
+                                    props.setauth(authSession.auth);
   }
 
 },[]);
       const log=()=>{
         sessionStorage.removeItem("authToken");
-        setauth(false);
+        props.setauth(false);
       }
   return (
     <nav className="navbar-dark bg-primary " style={{height:70}}>
@@ -33,7 +32,7 @@ export const Header = () => {
       <div>
       <Link to="/cart"><button type="button" class="btn btn-secondary btn-lg">Cart : {totalItems}</button></Link>
       {
-        auth?<button id='btn1' className="btn btn-primary m-2"
+        props.auth?<button id='btn1' className="btn btn-primary m-2"
         onClick={()=>log()} >LogOut</button>:
         <Link to='login'><button id='btn1' className="btn btn-primary m-2"
          >LogIn</button>

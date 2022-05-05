@@ -2,7 +2,7 @@
   "name": "food-restaurant",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mohittomar902.github.io/foodsrestaurant/",
+  "homepage": "https://mohittomar902.github.io/foodsrestaurant",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
